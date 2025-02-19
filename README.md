@@ -118,22 +118,6 @@ Example response:
 }
 ```
 
-## 📋 Tasks
-### 1. Data Preprocessing & Augmentation Pipeline
-- Implement a preprocessing pipeline to clean and prepare text data.
-- Apply **data augmentation techniques** (e.g., synonym replacement, backtranslation) to improve model robustness.
-### 2. Fine-Tuned LLM Model
-- Fine-tune a base LLM on the provided dataset.
-- Optimize hyperparameters to handle class imbalance and avoid overfitting.
-### 3. Model Evaluation Report
-- Provide a report with **precision, recall, F1-score, and ROC-AUC** (if applicable).
-- Include analysis of potential bias, overfitting, and actionable improvement steps.
-### 4. Inference API
-- Build a simple API using **FastAPI** or **Flask** to serve the model.
-- The API should accept text input and return a JSON response with the predicted class and confidence score.
-
----
-
 ## 📁 Project Structure
 ```
 .
@@ -233,43 +217,3 @@ The solution implements a robust text classification system with the following k
 - Docker support for reproducible deployment
 - MLflow model registry integration
 
-## 📁 Provided Resources
-- **Simulated Dataset**:
-  - Columns: `text` (string), `sensitive_label` (0 or 1).
-  - Examples:
-    | `text`                                                          | `sensitive_label` |
-    |----------------------------------------------------------------|-------------------|
-    | "Employee SSN: 123-45-6789. Address: 123 Fake Street."         | 1                 |
-    | "Update password policy for compliance with ISO 27001."        | 0                 |
----
-
-## 📤 Deliverables
-1. **Code**:
-   - Preprocessing/augmentation scripts.
-   - Training/evaluation code (Jupyter notebook or Python scripts).
-   - API implementation.
-2. **Trained Model**: Saved model weights and tokenizer.
-3. **Evaluation Report**: PDF or Markdown file with metrics and analysis.
-4. **API Documentation**: Instructions to run the API locally.
-
----
-
-## 📬 Submission Guidelines
-
-1. Clone this repository.
-2. Add your code, model, and report to the repo.
-3. Update this README including setup instructions (dependencies, API commands).
-4. Push your changes to the repo. No need to keep everything in a separate branch.
-
----
-
-## ❓ FAQs
-
-**Q: Can I share the dataset externally?**
-A: No—the simulated dataset is confidential. Use it only for this challenge.
-
-**Q: What if I have more questions?**
-A: Along with the invitation to this repository, you will also receive an invite to a Slack workspace. There, we will be available to answer any questions you may have about the challenge.
-
----
-Good luck! We're excited to see your innovative solutions. 🎯
